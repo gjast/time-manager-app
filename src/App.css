@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #101111;
+  --text-color: #fff;
+  --button-color: #000000;
+}
+
+:root[data-theme="light"] {
+  --background-color: #EDF4F6;
+  --text-color: #000000;
+  --button-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden;
+  font-family: 'SF Pro Text';
+  user-select: none;
+  transition: all 0.3s ease;
+
+}

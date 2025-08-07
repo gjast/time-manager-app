@@ -1,0 +1,76 @@
+.SetTime {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		h1 {
+			opacity: 20%;
+			font-size: 5vw;
+			font-weight: bold;
+      color: var(--text-color);
+      font-style: normal;
+		}
+	}
+}
+
+
+
+.SetTime_timer {
+  display: flex;
+  justify-content: center;     /* Центрируем timer по ширине */
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 1em;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.button_cont {
+  position: absolute;
+  right: 1em;
+  background-color: black;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 10vw;
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 80%;
+    transition: transform 0.3s ease; 
+  }
+
+  &:hover img {
+    transform: translateX(5px); 
+  }
+}
+
+.button_bak,
+.button_cont {
+
+  transition: background-color 0.6s ease;
+}
+
+
+.button_cont:active {
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
+
+
+.dot-color {
+	font-size: 15vw;
+  font-weight: 900;
+}
+

@@ -1,0 +1,37 @@
+.StartPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: var(--text-color);
+    font-size: 20vw;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+  }
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+    align-items: center;
+    gap: 2vw;
+    font-size: 5vw;
+    cursor: pointer;
+    img {
+
+    transition: transform 0.5s ease, filter 0.3s ease;
+    }
+
+  }
+  button:hover {
+    img {
+      filter: grayscale(1);
+      transform: translateX(5px);
+    }
+  }
+
+}

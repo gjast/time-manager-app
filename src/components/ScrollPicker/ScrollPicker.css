@@ -1,0 +1,23 @@
+.ScrollPicker {
+  font-style: italic;
+}
+
+.slide-number.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  user-select: none;
+}
+
+.slide-number.swiper-slide-active {
+  font-size: 20vw !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+.slide-number.swiper-slide-next,
+.slide-number.swiper-slide-prev {
+  opacity: 0.4;
+  font-size: 6vw;
+ 
+}

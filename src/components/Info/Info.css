@@ -1,0 +1,74 @@
+.Info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  h1 {
+    font-size: 8vw;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+#button_back {
+  background-color: black;
+  border: none;
+  border-radius: 0 0 100vw 0;
+  width: 9vw;
+  height: 9vw;
+  cursor: pointer;
+  img {
+    transform: rotate(180deg);
+    width: 70%;
+    margin: 0 1vw 1vw 0;
+    height: 70%;
+  }
+}
+
+.Container_info {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+	max-height: 80%;
+	overflow-y: auto;
+	overflow-x: auto;
+
+	/* Скрыть скроллбар (кроссбраузерно) */
+	scrollbar-width: none;         /* Firefox */
+	-ms-overflow-style: none;      /* IE 10+ */
+}
+
+.Container_info::-webkit-scrollbar {
+	display: none;                 /* Chrome, Safari */
+}
+
+
+.Info_task {
+	display: flex;
+	align-items: center;
+	gap: 2vw;
+}
+
+#task_time {
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 1vw 2vw;
+}
+
+.Info_task_text {
+	display: flex;
+	padding: 1vw 2vw;
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	gap: 2vw;
+
+}
