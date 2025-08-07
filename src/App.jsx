@@ -18,6 +18,7 @@ function Redirector() {
   useEffect(() => {
     const check = async () => {
       try {
+        await invoke('check_data_file')
         const exists = await invoke('check_today_exists')
         console.log('check_today_exists:', exists)
 
