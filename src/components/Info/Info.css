@@ -35,8 +35,10 @@ header {
 .Container_info {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 2vh;
 	max-height: 80%;
+	width: 100%;
 	overflow-y: auto;
 	overflow-x: auto;
 

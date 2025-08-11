@@ -25,11 +25,11 @@ function Redirector() {
         if (exists) {
           navigate('/set', { state: { text: 'WORK' } })
         } else {
-          navigate('/')
+          navigate('/start')
         }
       } catch (err) {
         console.error('Ошибка при проверке даты:', err)
-        navigate('/')
+        navigate('/start')
       }
     }
 
@@ -46,7 +46,7 @@ function App() {
         <Router>
           <Redirector />
           <Routes>
-            <Route path="/" element={<StartPage />} />
+            <Route path="/start" element={<StartPage />} />
             <Route path="/set" element={<SetTime />} />
             <Route path="/main" element={<MainWindow />} />
             <Route path="/create" element={<CreateTasks />} />

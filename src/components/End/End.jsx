@@ -77,7 +77,7 @@ export default function End() {
         </motion.div>
       </motion.div>
       <motion.div className="container_button" variants={itemVariants}>
-        <button id="button_continue" onClick={() => navigate("/")}>
+        <button id="button_continue" onClick={() => navigate("/start")}>
           <img src={arrow} alt="arrow" />
         </button>
       </motion.div>
